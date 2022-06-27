@@ -24,4 +24,4 @@ de numarul de ori (counter n = N - n, unde N e dimensiunea matricei). Registrul 
 contorizeaza litera la care s-a ajuns textul de criptat, iar esi locul din matrice 
 (adunam/scadem N pentru a ne muta pe coloana, iar pentru linie adunam/scadem 1). In 
 cazul in care matricea este de marime N, unde N impar, ultimul pas este sa calculam 
-indexul elementului din mijloc si sa-l criptam.
+indexul elementului din mijloc si sa il criptam.
