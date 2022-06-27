@@ -1,0 +1,27 @@
+Task1: Am parcurs stringul adaugand de fiecare data cheia. In cazul in care depaseste
+codul ASII atunci scadem 26 pentru a reseta sirul.
+Task2: Pentru a calcula distanta dintre puncte salvam coordonatele x si y ale fiecarui
+punct.Daca x urile sunt diferite vedem care este cel mai mare pentru ca scaderea sa 
+fie un numar pozitiv si returnam rezultatul. Daca nu atunci ne folosim de coordonatele 
+y si procedam la fel.
+Pentru road ne folosim de registrii pe rand, deoarece avem mai multe puncte. Salvam mai 
+intai coordonatele x sa testam daca sunt egale. Daca da, trecem la y, daca nu calculam 
+diferenta lor. 
+Pentru square impartim registru la un counter. Daca impartitorul (counter-ul) va fi 
+egal cu catul, atunci numarul este patrat perfect. Consideram si cazul in care se pierd 
+zecimale (spre exemplu 5:2 = 2.5, adica 2), asa ca dupa ce aflam cu cat este egal 
+counterul mai facem o ultima verificare (catul * impatitor sa dea numarul nostru 
+initial).
+Task3:Pentru acest tip de criptare salvam in ah cheia si in al litera ce trebuie 
+criptata. Matematic, din matrice observam ca daca cheia este mai mare decat litera 
+atunci criptarea este a "cheie-litera" litera din alfabet. In caz contrar este 
+"26+cheie-litera" litera din alfabet. Folosindu-ne de aceste formule obtinem textul 
+criptat, adunand la rezultatul anterior 65 (litera 'A' din ASCII).
+Task4: Am incercat sa fac un loop in care sa parcurg matricea in spirala, insa nu am 
+reusit (it ain't much, but it's honest work) asa ca am luat pe rand fiecare linie si 
+coloana. De fiecare daca am luat un counter care sa parcurga linia/coloana respectiva 
+de numarul de ori (counter n = N - n, unde N e dimensiunea matricei). Registrul edi 
+contorizeaza litera la care s-a ajuns textul de criptat, iar esi locul din matrice 
+(adunam/scadem N pentru a ne muta pe coloana, iar pentru linie adunam/scadem 1). In 
+cazul in care matricea este de marime N, unde N impar, ultimul pas este sa calculam 
+indexul elementului din mijloc si sa-l criptam.
