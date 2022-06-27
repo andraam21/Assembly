@@ -1,0 +1,11 @@
+Programul incepe prin a citi comanda. In cazul in care se apeleaza functia add_last se va realoca vectorul si se vor muta datele din structura
+data ca parametru in arr. Pentru add_at se va verifica daca indexul depaseste lungimea vectorului. Daca da, atunci se fa apela functia add_last,
+in caz contrar se va imparti vectorul astfel : arr va fi realocat cu valoarea indexului primit (o sa avem un vector mai mic cu elementele ce se 
+afla inaintea locului unde trebuie sa inseram blocul de date) si un vector auxiliar ce va retine ceea ce se afla dupa locul unde trebuie 
+inserat blocul. Dupa ce se taie arr in aceste doua bucati ne vom folosi de add_last la noul vector creat pentru a adauga la final datele din
+bloc, dupa care realocam pentru a muta inapoi si elementele retinute anterior in vectorul auxiliar. Pentru functia de find cautam elementul ce 
+trebuie printat si il afisam pe arr incepand cu pozitia respectiva si pana la finalul structurii. In cazul lui delete_at cautam inceputul si 
+finalul secventei ce trebuie eliminata, astfel putand sa suprapunem ceea ce se afla de la finalul blocului la inceputul acestuia. Dupa aceasta 
+etapa vom realoca vectorul, deoarece in ultima bucata vor ramane elemente de care nu mai avem nevoie. In ceea ce priveste printarea, se va
+verfica de fiecare data tipul structurii de date pentru a sti sub ce forma se va afisa rezultatul (int8_t, int16_t, int32_t). In final, prin
+intermediul comenzii exit se va elibera memoria si se va termina rularea programului.
